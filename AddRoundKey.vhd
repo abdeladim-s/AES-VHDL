@@ -13,4 +13,4 @@ end addroundkey;
 architecture addroundkey_archi of addroundkey is
 begin
   addroundkey_out <= Plaintext xor Key;
-end AES_archi;
+end addroundkey_archi;

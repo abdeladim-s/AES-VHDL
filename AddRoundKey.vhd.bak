@@ -8,8 +8,9 @@ entity addroundkey is
         Key       : in std_logic_vector(127 downto 0);
         addroundkey_out : out std_logic_vector(127 downto 0));
         
-end AES;
+end addroundkey;
 
-architecture AES_archi of AES is
+architecture addroundkey_archi of addroundkey is
 begin
+  addroundkey_out <= Plaintext xor Key;
 end AES_archi;
