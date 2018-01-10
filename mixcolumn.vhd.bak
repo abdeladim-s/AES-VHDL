@@ -1,0 +1,29 @@
+-- Abdeladim SADIKI
+-- INPT
+-- 01/10/2018
+----------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity mixcolumn is
+port ( i0,i1,i2,i3 : in  STD_LOGIC_VECTOR (7 downto 0);
+       s0,s1,s2,s3 : out STD_LOGIC_VECTOR (7 downto 0));
+end mixcolumn;
+
+architecture Behavioral of mixcolumn is
+  signal one : std_logic_vector(7 downto 0)   := x"01" ;
+  signal two : std_logic_vector(7 downto 0)   := x"02";
+  signal three : std_logic_vector(7 downto 0) := x"03" ;
+  
+begin
+  
+  s0 <= (i0 and two) xor (i1 and three) xor (i2) xor (i3);
+  s1 <= (i0) xor (i1 and two) xor (i2 and three) xor (i3);
+  s2 <= (i0) xor (i1) xor (i2 and two) xor (i3 and three);
+  s3 <= (i0  and three) xor (i1 and three) xor (i2) xor (i3 and two);
+  
+end;
+  

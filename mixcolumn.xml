@@ -1,0 +1,15 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='mixcolumn'>
+  <useClause path='ieee.std_logic_1164.all' />
+    <portList>
+
+      <port name='i0' direction='in' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='i1' direction='in' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='i2' direction='in' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='i3' direction='in' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='s0' direction='out' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='s1' direction='out' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='s2' direction='out' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+      <port name='s3' direction='out' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='mixcolumn' packedDimension='(7 downto 0)' />
+
+    </portList>
+</interfaceDefinition>
