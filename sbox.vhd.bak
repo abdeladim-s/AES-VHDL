@@ -1,0 +1,309 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @AbdeladimSadiki
+ Sign out
+ Watch 0
+  Fork 1 zelmad/AES-VHDL
+forked from AbdeladimSadiki/AES-VHDL
+ Code  Pull requests 0  Projects 0  Wiki  Insights
+Branch: master Find file Copy pathAES-VHDL/sbox.vhd
+6fb2b55  an hour ago
+@zelmad zelmad add subbytes
+1 contributor
+RawBlameHistory     
+289 lines (277 sloc)  7.8 KB
+--using IEEE and IEEE.std_logic_1164.all to import all usful methods.
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- the entity.
+-- a is the input std_logic_vector.
+-- y is the output std_logic_vector.
+
+entity sbox is
+port (a : in std_logic_vector(7 downto 0);
+	    y : out std_logic_vector(7 downto 0));
+end sbox;
+
+-- sbox architucture.
+
+architecture Behavioral of sbox is
+
+begin
+ 
+-- process how take for input the std_logic_vector input of sbox.
+
+process(a)
+begin
+
+case a is
+			when x"00"  =>  y<=x"63";
+			when x"01"  =>  y<=x"7c";
+			when x"02"  =>  y<=x"77";
+			when x"03"  =>  y<=x"7b";
+			when x"04"  =>  y<=x"f2";
+			when x"05"  =>  y<=x"6b";
+			when x"06"  =>  y<=x"6f";
+			when x"07"  =>  y<=x"c5";
+			when x"08"  =>  y<=x"30";
+			when x"09"  =>  y<=x"01";
+			when x"0A"  =>  y<=x"67";
+			when x"0B"  =>  y<=x"2b";
+			when x"0C"  =>  y<=x"fe";
+			when x"0D"  =>  y<=x"d7";
+			when x"0E"  =>  y<=x"ab";
+			when x"0F"  =>  y<=x"76";
+			when x"10"  =>  y<=x"ca";
+			when x"11"  =>  y<=x"82";
+			when x"12"  =>  y<=x"c9";
+			when x"13"  =>  y<=x"7d";
+			when x"14"  =>  y<=x"fa";
+			when x"15"  =>  y<=x"59";
+			when x"16"  =>  y<=x"47";
+			when x"17"  =>  y<=x"f0";
+			when x"18"  =>  y<=x"ad";
+			when x"19"  =>  y<=x"d4";
+			when x"1A"  =>  y<=x"a2";
+			when x"1B"  =>  y<=x"af";
+			when x"1C"  =>  y<=x"9c";
+			when x"1D"  =>  y<=x"a4";
+			when x"1E"  =>  y<=x"72";
+			when x"1F"  =>  y<=x"c0";
+			when x"20"  =>  y<=x"b7";
+			when x"21"  =>  y<=x"fd";
+			when x"22"  =>  y<=x"93";
+			when x"23"  =>  y<=x"26";
+			when x"24"  =>  y<=x"36";
+			when x"25"  =>  y<=x"3f";
+			when x"26"  =>  y<=x"f7";
+			when x"27"  =>  y<=x"cc";
+			when x"28"  =>  y<=x"34";
+			when x"29"  =>  y<=x"a5";
+			when x"2A"  =>  y<=x"e5";
+			when x"2B"  =>  y<=x"f1";
+			when x"2C"  =>  y<=x"71";
+			when x"2D"  =>  y<=x"d8";
+			when x"2E"  =>  y<=x"31";
+			when x"2F"  =>  y<=x"15";
+			when x"30"  =>  y<=x"04";
+			when x"31"  =>  y<=x"c7";
+			when x"32"  =>  y<=x"23";
+			when x"33"  =>  y<=x"c3";
+			when x"34"  =>  y<=x"18";
+			when x"35"  =>  y<=x"96";
+			when x"36"  =>  y<=x"05";
+			when x"37"  =>  y<=x"9a";
+			when x"38"  =>  y<=x"07";
+			when x"39"  =>  y<=x"12";
+			when x"3A"  =>  y<=x"80";
+			when x"3B"  =>  y<=x"e2";
+			when x"3C"  =>  y<=x"eb";
+			when x"3D"  =>  y<=x"27";
+			when x"3E"  =>  y<=x"b2";
+			when x"3F"  =>  y<=x"75";
+			when x"40"  =>  y<=x"09";
+			when x"41"  =>  y<=x"83";
+			when x"42"  =>  y<=x"2c";
+			when x"43"  =>  y<=x"1a";
+			when x"44"  =>  y<=x"1b";
+			when x"45"  =>  y<=x"6e";
+			when x"46"  =>  y<=x"5a";
+      when x"47"  =>  y<=x"a0";
+			when x"48"  =>  y<=x"52";
+			when x"49"  =>  y<=x"3b";
+			when x"4A"  =>  y<=x"d6";
+			when x"4B"  =>  y<=x"b3";
+			when x"4C"  =>  y<=x"29";
+			when x"4D"  =>  y<=x"e3";
+			when x"4E"  =>  y<=x"2f";
+		  when x"4F"  =>  y<=x"84";
+			when x"50"  =>  y<=x"53";
+			when x"51"  =>  y<=x"d1";
+			when x"52"  =>  y<=x"00";
+			when x"53"  =>  y<=x"ed";
+			when x"54"  =>  y<=x"20";
+			when x"55"  =>  y<=x"fc";
+			when x"56"  =>  y<=x"b1";
+			when x"57"  =>  y<=x"5b";
+			when x"58"  =>  y<=x"6a";
+			when x"59"  =>  y<=x"cb";
+			when x"5A"  =>  y<=x"be";
+			when x"5B"  =>  y<=x"39";
+			when x"5C"  =>  y<=x"4a";
+			when x"5D"  =>  y<=x"4c";
+			when x"5E"  =>  y<=x"58";
+			when x"5F"  =>  y<=x"cf";
+			when x"60"  =>  y<=x"d0";
+			when x"61"  =>  y<=x"ef";
+			when x"62"  =>  y<=x"aa";
+			when x"63"  =>  y<=x"fb";
+			when x"64"  =>  y<=x"43";
+			when x"65"  =>  y<=x"4d";
+			when x"66"  =>  y<=x"33";
+			when x"67"  =>  y<=x"85";
+			when x"68"  =>  y<=x"45";
+			when x"69"  =>  y<=x"f9";
+		    when x"6A"  =>  y<=x"02";
+			when x"6B"  =>  y<=x"7f";
+			when x"6C"  =>  y<=x"50";
+			when x"6D"  =>  y<=x"3c";
+			when x"6E"  =>  y<=x"9f";
+			when x"6F"  =>  y<=x"a8";
+			when x"70"  =>  y<=x"51";
+			when x"71"  =>  y<=x"a3";
+			when x"72"  =>  y<=x"40";
+			when x"73"  =>  y<=x"8f";
+			when x"74"  =>  y<=x"92";
+			when x"75"  =>  y<=x"9d";
+			when x"76"  =>  y<=x"38";
+		  when x"77"  =>  y<=x"f5";
+			when x"78"  =>  y<=x"bc";
+			when x"79"  =>  y<=x"b6";
+			when x"7A"  =>  y<=x"da";
+			when x"7B"  =>  y<=x"21";
+			when x"7C"  =>  y<=x"10";
+			when x"7D"  =>  y<=x"ff";
+			when x"7E"  =>  y<=x"f3";
+			when x"7F"  =>  y<=x"d2";
+			when x"80"  =>  y<=x"cd";
+			when x"81"  =>  y<=x"0c";
+			when x"82"  =>  y<=x"13";
+			when x"83"  =>  y<=x"ec";
+			when x"84"  =>  y<=x"5f";
+			when x"85"  =>  y<=x"97";
+			when x"86"  =>  y<=x"44";
+			when x"87"  =>  y<=x"17";
+			when x"88"  =>  y<=x"c4";
+			when x"89"  =>  y<=x"a7";
+			when x"8A"  =>  y<=x"7e";
+			when x"8B"  =>  y<=x"3d";
+			when x"8C"  =>  y<=x"64";
+			when x"8D"  =>  y<=x"5d";
+			when x"8E"  =>  y<=x"19";
+			when x"8F"  =>  y<=x"73";
+			when x"90"  =>  y<=x"60";
+			when x"91"  =>  y<=x"81";
+			when x"92"  =>  y<=x"4f";
+			when x"93"  =>  y<=x"dc";
+			when x"94"  =>  y<=x"22";
+			when x"95"  =>  y<=x"2a";
+			when x"96"  =>  y<=x"90";
+			when x"97"  =>  y<=x"88";
+			when x"98"  =>  y<=x"46";
+			when x"99"  =>  y<=x"ee";
+			when x"9A"  =>  y<=x"b8";
+			when x"9B"  =>  y<=x"14";
+			when x"9C"  =>  y<=x"de";
+			when x"9D"  =>  y<=x"5e";
+			when x"9E"  =>  y<=x"0b";
+			when x"9F"  =>  y<=x"db";
+			when x"A0"  =>  y<=x"e0";
+			when x"A1"  =>  y<=x"32";
+			when x"A2"  =>  y<=x"3a";
+			when x"A3"  =>  y<=x"0a";
+			when x"A4"  =>  y<=x"49";
+			when x"A5"  =>  y<=x"06";
+			when x"A6"  =>  y<=x"24";
+			when x"A7"  =>  y<=x"5c";
+			when x"A8"  =>  y<=x"c2";
+			when x"A9"  =>  y<=x"d3";
+			when x"AA"  =>  y<=x"ac";
+			when x"AB"  =>  y<=x"62";
+			when x"AC"  =>  y<=x"91";
+			when x"AD"  =>  y<=x"95";
+			when x"AE"  =>  y<=x"e4";
+			when x"AF"  =>  y<=x"79";
+			when x"B0"  =>  y<=x"e7";
+			when x"B1"  =>  y<=x"c8";
+			when x"B2"  =>  y<=x"37";
+			when x"B3"  =>  y<=x"6d";
+			when x"B4"  =>  y<=x"8d";
+			when x"B5"  =>  y<=x"d5";
+			when x"B6"  =>  y<=x"4e";
+			when x"B7"  =>  y<=x"a9";
+			when x"B8"  =>  y<=x"6c";
+			when x"B9"  =>  y<=x"56";
+			when x"BA"  =>  y<=x"f4";
+			when x"BB"  =>  y<=x"ea";
+			when x"BC"  =>  y<=x"65";
+			when x"BD"  =>  y<=x"7a";
+			when x"BE"  =>  y<=x"ae";
+			when x"BF"  =>  y<=x"08";
+			when x"C0"  =>  y<=x"ba";
+			when x"C1"  =>  y<=x"78";
+			when x"C2"  =>  y<=x"25";
+			when x"C3"  =>  y<=x"2e";
+			when x"C4"  =>  y<=x"1c";
+			when x"C5"  =>  y<=x"a6";
+			when x"C6"  =>  y<=x"b4";
+			when x"C7"  =>  y<=x"c6";
+			when x"C8"  =>  y<=x"e8";
+			when x"C9"  =>  y<=x"dd";
+			when x"CA"  =>  y<=x"74";
+			when x"CB"  =>  y<=x"1f";
+			when x"CC"  =>  y<=x"4b";
+			when x"CD"  =>  y<=x"bd";
+			when x"CE"  =>  y<=x"8b";
+			when x"CF"  =>  y<=x"8a";
+			when x"D0"  =>  y<=x"70";
+			when x"D1"  =>  y<=x"3e";
+			when x"D2"  =>  y<=x"b5";
+			when x"D3"  =>  y<=x"66";
+			when x"D4"  =>  y<=x"48";
+			when x"D5"  =>  y<=x"03";
+			when x"D6"  =>  y<=x"f6";
+		  when x"D7"  =>  y<=x"0e";
+			when x"D8"  =>  y<=x"61";
+			when x"D9"  =>  y<=x"35";
+			when x"DA"  =>  y<=x"57";
+			when x"DB"  =>  y<=x"b9";
+			when x"DC"  =>  y<=x"86";
+			when x"DD"  =>  y<=x"c1";
+			when x"DE"  =>  y<=x"1d";
+			when x"DF"  =>  y<=x"9e";
+			when x"E0"  =>  y<=x"e1";
+			when x"E1"  =>  y<=x"f8";
+			when x"E2"  =>  y<=x"98";
+			when x"E3"  =>  y<=x"11";
+			when x"E4"  =>  y<=x"69";
+			when x"E5"  =>  y<=x"d9";
+			when x"E6"  =>  y<=x"8e";
+			when x"E7"  =>  y<=x"94";
+			when x"E8"  =>  y<=x"9b";
+			when x"E9"  =>  y<=x"1e";
+			when x"EA"  =>  y<=x"87";
+			when x"EB"  =>  y<=x"e9";
+			when x"EC"  =>  y<=x"ce";
+			when x"ED"  =>  y<=x"55";
+			when x"EE"  =>  y<=x"28";
+			when x"EF"  =>  y<=x"df";
+			when x"F0"  =>  y<=x"8c";
+			when x"F1"  =>  y<=x"a1";
+			when x"F2"  =>  y<=x"89";
+			when x"F3"  =>  y<=x"0d";
+			when x"F4"  =>  y<=x"bf";
+			when x"F5"  =>  y<=x"e6";
+			when x"F6"  =>  y<=x"42";
+			when x"F7"  =>  y<=x"68";
+			when x"F8"  =>  y<=x"41";
+			when x"F9"  =>  y<=x"99";
+			when x"FA"  =>  y<=x"2d";
+			when x"FB"  =>  y<=x"0f";
+			when x"FC"  =>  y<=x"b0";
+			when x"FD"  =>  y<=x"54";
+			when x"FE"  =>  y<=x"bb";
+--			when x"FF"  =>  y<=x"16";
+
+			when others=> y <= x"00";
+
+
+end case;
+end process;
+end Behavioral;
+
