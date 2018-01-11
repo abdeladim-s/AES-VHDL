@@ -1,0 +1,10 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='AES'>
+  <useClause path='ieee.std_logic_1164.all' />
+    <portList>
+
+      <port name='Plaintext' direction='in' type='std_logic_vector (127 downto 0)' kind='array' library='work' package='AES' packedDimension='(127 downto 0)' />
+      <port name='Key' direction='in' type='std_logic_vector (127 downto 0)' kind='array' library='work' package='AES' packedDimension='(127 downto 0)' />
+      <port name='Ciphertext' direction='out' type='std_logic_vector (127 downto 0)' kind='array' library='work' package='AES' packedDimension='(127 downto 0)' />
+
+    </portList>
+</interfaceDefinition>

@@ -4,7 +4,7 @@ K3
 cModel Technology
 dC:\Users\53h20h41h\Projects\ModelSimProjects\Tp4_co
 Eaddroundkey
-Z0 w1515538300
+Z0 w1515702249
 Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
 Z3 dC:\Users\53h20h41h\Projects\ModelSimProjects\AES
@@ -12,23 +12,23 @@ Z4 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/AddRoundKey.vhd
 Z5 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/AddRoundKey.vhd
 l0
 L6
-VV07[0@3oM2?S9H;J408SY3
+V:g[RgEU9H?H;Dj2853Wma1
 Z6 OV;C;10.1d;51
 32
-Z7 !s108 1515696080.278000
+Z7 !s108 1515711645.487000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/AddRoundKey.vhd|
 Z9 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/AddRoundKey.vhd|
 Z10 o-work work -2002 -explicit -O0
 Z11 tExplicit 1
-!s100 3<^_A88i2f;F:0R]nd@j80
+!s100 1nd1NhV>D^2lLEhiURidH2
 !i10b 1
 Aaddroundkey_archi
 R1
 R2
-DEx4 work 11 addroundkey 0 22 V07[0@3oM2?S9H;J408SY3
+DEx4 work 11 addroundkey 0 22 :g[RgEU9H?H;Dj2853Wma1
 l14
 L13
-VHo`bPUhcE@RQ0[mNB@Kd93
+V>cmIGRX=m4IZj`eSHW<Ea3
 R6
 32
 R7
@@ -36,7 +36,7 @@ R8
 R9
 R10
 R11
-!s100 WDFeUZWeSl<0Bo=3VGgdG1
+!s100 `?GeZKA9z]Y7BAD=cQ=h_1
 !i10b 1
 Eaddroundkey_tb
 Z12 w1515543910
@@ -53,7 +53,7 @@ L9
 VWhc?;gB;3lkza:::4TBVj1
 R6
 32
-Z18 !s108 1515696080.819000
+Z18 !s108 1515711645.783000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/addroundkey_tb.vhd|
 Z20 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/addroundkey_tb.vhd|
 R10
@@ -80,7 +80,7 @@ R11
 !s100 1T<51P2g;NLmQFZ5DlL373
 !i10b 1
 Eaes
-Z21 w1515536458
+Z21 w1515710591
 R1
 R2
 R3
@@ -91,7 +91,7 @@ L18
 VMVnoE08fH<XR0:_FOZ9iD0
 R6
 32
-Z24 !s108 1515696079.766000
+Z24 !s108 1515711645.216000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/AES.vhd|
 Z26 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/AES.vhd|
 R10
@@ -102,9 +102,9 @@ Aaes_archi
 R1
 R2
 DEx4 work 3 aes 0 22 MVnoE08fH<XR0:_FOZ9iD0
-l26
+l53
 L25
-VO9Uf06Di5=DJS2aToPl@41
+VTBYUa_k4CK1UjAoZdgNo40
 R6
 32
 R24
@@ -112,23 +112,58 @@ R25
 R26
 R10
 R11
-!s100 Q:cN3`TTUX<OnCN2Y>i2z0
+!s100 9i7eYbNg0kjHoeXkdAe>03
 !i10b 1
-Ekeyexpansion
-Z27 w1515695795
+Eaes_tb
+Z27 w1515711643
 R1
 R2
 R3
-Z28 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd
-Z29 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd
+Z28 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/aes_tb.vhd
+Z29 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/aes_tb.vhd
+l0
+L3
+VNa:?oEnP33haT]A^]H6a<1
+!s100 :YAj5Y6Z0be5NNSePbGXI2
+R6
+32
+!i10b 1
+Z30 !s108 1515711648.928000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/aes_tb.vhd|
+Z32 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/aes_tb.vhd|
+R10
+R11
+Aaes_tb_arch
+R1
+R2
+Z33 DEx4 work 6 aes_tb 0 22 Na:?oEnP33haT]A^]H6a<1
+l16
+L6
+V9TeJ_Y2WJ2T_mAX>_6b8k1
+!s100 eSodGZj22T[JO<4GPggHL2
+R6
+32
+!i10b 1
+R30
+R31
+R32
+R10
+R11
+Ekeyexpansion
+Z34 w1515695795
+R1
+R2
+R3
+Z35 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd
+Z36 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd
 l0
 L6
 V[7[k86:i5WiI6LLGgMW1=1
 R6
 32
-Z30 !s108 1515696083.864000
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd|
-Z32 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd|
+Z37 !s108 1515711647.438000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd|
+Z39 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/KeyExpansion.vhd|
 R10
 R11
 !s100 ZGA8F:LNPQ8J@:iL5z1i80
@@ -140,34 +175,34 @@ DEx4 work 12 keyexpansion 0 22 [7[k86:i5WiI6LLGgMW1=1
 l23
 L12
 VGQEggFH;_E2aX[TJAS`N?0
-!s100 P7@5ghMa]aL1IR3=S`Wk`2
 R6
 32
-R30
-R31
-R32
+R37
+R38
+R39
 R10
 R11
+!s100 P7@5ghMa]aL1IR3=S`Wk`2
 !i10b 1
 Ekeyexpansion_tb
-Z33 w1515696086
+Z40 w1515696086
 R1
 R2
 R3
-Z34 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd
-Z35 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd
+Z41 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd
+Z42 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd
 l0
 L3
 VgM]1;GF83I?57Jkh5Yk650
-!s100 WdhQVb?WUf4[8<P2^>AjM2
 R6
 32
-!i10b 1
-Z36 !s108 1515696089.999000
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd|
-Z38 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd|
+Z43 !s108 1515711647.705000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd|
+Z45 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/keyexpansion_tb.vhd|
 R10
 R11
+!s100 WdhQVb?WUf4[8<P2^>AjM2
+!i10b 1
 Akeyexpansion_tb_arch
 R1
 R2
@@ -175,65 +210,135 @@ DEx4 work 15 keyexpansion_tb 0 22 gM]1;GF83I?57Jkh5Yk650
 l16
 L6
 Vi?bUOD6L?I`5PCQLzG>eY2
-!s100 _hUj8I^2_8K[14J;n1RO]3
 R6
 32
-!i10b 1
-R36
-R37
-R38
+R43
+R44
+R45
 R10
 R11
-Emixcolumn
-Z39 w1515622578
+!s100 _hUj8I^2_8K[14J;n1RO]3
+!i10b 1
+Elastround
+Z46 w1515703073
 R1
 R2
 R3
-Z40 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd
-Z41 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd
+Z47 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/lastRound.vhd
+Z48 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/lastRound.vhd
 l0
-L11
-VU6]]GCX[[Wbg^W_4W:jWA2
+L4
+VZO3RQkfFN:YzdoR`Wf=PE2
 R6
 32
-Z42 !s108 1515696081.838000
-Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd|
-Z44 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd|
+Z49 !s108 1515711647.977000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/lastRound.vhd|
+Z51 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/lastRound.vhd|
 R10
 R11
-!s100 ZC]IFl6@AP?oU<4=kf9e?0
+!s100 7Ki>4JnBGmb^V4?3JbDHV1
 !i10b 1
 Abehavioral
 R1
 R2
-DEx4 work 9 mixcolumn 0 22 U6]]GCX[[Wbg^W_4W:jWA2
-l21
-L16
-V0[TQ?4oiDM6FmloO[h5H71
+DEx4 work 9 lastround 0 22 ZO3RQkfFN:YzdoR`Wf=PE2
+l36
+L11
+V8Ye^WBg`R]UF[_1[7[a]Q0
 R6
 32
-R42
-R43
-R44
+R49
+R50
+R51
 R10
 R11
-!s100 DH^_f:F:cVn:zT9KXj:dS3
+!s100 09_cSAGhzT_>g=]cCS<^01
 !i10b 1
-Emixcolumn_tb
-Z45 w1515622057
+Elastround_tb
+Z52 w1515702815
 R1
 R2
 R3
-Z46 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd
-Z47 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd
+Z53 8lastround_tb.vhd
+Z54 Flastround_tb.vhd
+l0
+L3
+VUZhE>UF_o[MTXQ4<<AAml3
+R6
+32
+Z55 !s108 1515702815.413000
+Z56 !s90 -reportprogress|300|-work|work|lastround_tb.vhd|
+Z57 !s107 lastround_tb.vhd|
+Z58 o-work work -O0
+R11
+!s100 m`0lSRgiFSX^4DBh9W7JW1
+!i10b 1
+Alastround_tb_arch
+R1
+R2
+DEx4 work 12 lastround_tb 0 22 UZhE>UF_o[MTXQ4<<AAml3
+l18
+L6
+VAn3YMFPnGB0IEl[W7^fc>1
+R6
+32
+R55
+R56
+R57
+R58
+R11
+!s100 B<oM1O^IQk]VAkZlh=U6<0
+!i10b 1
+Emixcolumn
+Z59 w1515710224
+R1
+R2
+R3
+Z60 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd
+Z61 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd
+l0
+L6
+V7M2Y?bIOB?]DYe;9;O1]Q0
+R6
+32
+Z62 !s108 1515711646.375000
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd|
+Z64 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn.vhd|
+R10
+R11
+!s100 cGQbm1d>e?]`dW9S;j?XI3
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 9 mixcolumn 0 22 7M2Y?bIOB?]DYe;9;O1]Q0
+l30
+L11
+VIQ4;L7]EYoDC[dOcm[lcI3
+R6
+32
+R62
+R63
+R64
+R10
+R11
+!s100 <^h6AFUBF9ECKWO1Y;EFj1
+!i10b 1
+Emixcolumn_tb
+Z65 w1515622057
+R1
+R2
+R3
+Z66 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd
+Z67 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd
 l0
 L3
 Va^IfdGVEDcM]ZjZY]E^zM2
 R6
 32
-Z48 !s108 1515696082.317000
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd|
-Z50 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd|
+Z68 !s108 1515711646.627000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd|
+Z70 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumn_tb.vhd|
 R10
 R11
 !s100 Ehi98oRVm^OiXc>0mZ3jR3
@@ -247,28 +352,98 @@ L6
 VQh;Rh:1JaA[DdCPJm83U^0
 R6
 32
-R48
-R49
-R50
+R68
+R69
+R70
 R10
 R11
 !s100 ]A;;1eWUS^5HLg7MRC`HS3
 !i10b 1
-Esbox
-Z51 w1515688603
+Emixcolumnonebyte
+Z71 w1515710156
 R1
 R2
 R3
-Z52 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd
-Z53 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd
+Z72 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumnOneByte.vhd
+Z73 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumnOneByte.vhd
+l0
+L9
+VOjCSlIImjj94;X3EJg[gJ3
+R6
+32
+Z74 !s108 1515711648.614000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumnOneByte.vhd|
+Z76 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/mixcolumnOneByte.vhd|
+R10
+R11
+!s100 T6K>ohU4:RNn[PDkTIj2V0
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 16 mixcolumnonebyte 0 22 OjCSlIImjj94;X3EJg[gJ3
+l16
+L14
+Vihdg=Ehb=1_@KA:We1Q160
+!s100 8L08BXU<ZQVK[1d@Jc>E`1
+R6
+32
+R74
+R75
+R76
+R10
+R11
+!i10b 1
+Eround
+Z77 w1515710328
+R1
+R2
+R3
+Z78 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/round.vhd
+Z79 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/round.vhd
+l0
+L5
+VU@lKf:>;VeEOjUHN0@]001
+R6
+32
+Z80 !s108 1515711648.338000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/round.vhd|
+Z82 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/round.vhd|
+R10
+R11
+!s100 3PJzL2zYfWY9ABGI_`8Yd3
+!i10b 1
+Abehavioral
+R1
+R2
+DEx4 work 5 round 0 22 U@lKf:>;VeEOjUHN0@]001
+l44
+L14
+V`_A8`iB=QCNDSLO_zJYfE0
+R6
+32
+R80
+R81
+R82
+R10
+R11
+!s100 8f5occ3S7UVYX8LaVoUc70
+!i10b 1
+Esbox
+Z83 w1515688603
+R1
+R2
+R3
+Z84 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd
+Z85 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd
 l0
 L11
 VRHKgTD_AReI7VUE3ch0]?3
 R6
 32
-Z54 !s108 1515696082.766000
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd|
-Z56 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd|
+Z86 !s108 1515711646.889000
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd|
+Z88 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/sbox.vhd|
 R10
 R11
 !s100 ]n1@J1k;GLRObA>gmH3d?2
@@ -282,28 +457,28 @@ L18
 VjalGkoN[]3KGURD?>8`S;2
 R6
 32
-R54
-R55
-R56
+R86
+R87
+R88
 R10
 R11
 !s100 i^UgbLamPVmNLS?W:=`e=3
 !i10b 1
 Eshiftrows
-Z57 w1515619657
+Z89 w1515619657
 R1
 R2
 R3
-Z58 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd
-Z59 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd
+Z90 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd
+Z91 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd
 l0
 L11
 Ve_0QDH0B;kWg5Db9aj1Y90
 R6
 32
-Z60 !s108 1515696081.342000
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd|
-Z62 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd|
+Z92 !s108 1515711646.118000
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd|
+Z94 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/shiftrows.vhd|
 R10
 R11
 !s100 @TnXjJHDWhKCI4U0[>iUY1
@@ -317,28 +492,28 @@ L16
 VF^2_8V]M_MUaz3>BE>FX<0
 R6
 32
-R60
-R61
-R62
+R92
+R93
+R94
 R10
 R11
 !s100 ^A:9c^Yc92FA5GliBdO>32
 !i10b 1
 Esubbytes
-Z63 w1515688698
+Z95 w1515688698
 R1
 R2
 R3
-Z64 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd
-Z65 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd
+Z96 8C:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd
+Z97 FC:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd
 l0
 L7
 VSJI9h?8I]=ehJA5mSSb@f3
 R6
 32
-Z66 !s108 1515696083.338000
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd|
-Z68 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd|
+Z98 !s108 1515711647.186000
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd|
+Z100 !s107 C:/Users/53h20h41h/Projects/ModelSimProjects/AES/SubBytes.vhd|
 R10
 R11
 !s100 <]^<bgf:9XTf31Icc<6MF2
@@ -352,9 +527,9 @@ L12
 VA2n`FYI_OEQAXYWJj_?G53
 R6
 32
-R66
-R67
-R68
+R98
+R99
+R100
 R10
 R11
 !s100 ;3eU?MmYK]AOh3F9H1D^m1

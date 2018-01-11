@@ -1,0 +1,11 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='lastRound'>
+  <useClause path='ieee.std_logic_1164.all' />
+    <portList>
+
+      <port name='lastRound_in' direction='in' type='std_logic_vector (127 downto 0)' kind='array' library='work' package='lastRound' packedDimension='(127 downto 0)' />
+      <port name='keylastin' direction='in' type='std_logic_vector (127 downto 0)' kind='array' library='work' package='lastRound' packedDimension='(127 downto 0)' />
+      <port name='Rcon' direction='in' type='std_logic_vector (7 downto 0)' kind='array' library='work' package='lastRound' packedDimension='(7 downto 0)' />
+      <port name='lastRound_out' direction='out' type='std_logic_vector (127 downto 0)' kind='array' library='work' package='lastRound' packedDimension='(127 downto 0)' />
+
+    </portList>
+</interfaceDefinition>

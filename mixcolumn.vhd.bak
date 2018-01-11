@@ -20,10 +20,10 @@ architecture Behavioral of mixcolumn is
   
 begin
   
-  s0 <= (i0 and two) xor (i1 and three) xor (i2) xor (i3);
-  s1 <= (i0) xor (i1 and two) xor (i2 and three) xor (i3);
-  s2 <= (i0) xor (i1) xor (i2 and two) xor (i3 and three);
-  s3 <= (i0  and three) xor (i1 and three) xor (i2) xor (i3 and two);
+  s0 <= (i0 and two) xor (i1 and three) xor (i2 and one) xor (i3 and one);
+  s1 <= (i0 and one) xor (i1 and two) xor (i2 and three) xor (i3 and one);
+  s2 <= (i0 and one) xor (i1 and one) xor (i2 and two) xor (i3 and three);
+  s3 <= (i0  and three) xor (i1 and one) xor (i2 and one) xor (i3 and two);
   
 end;
   
